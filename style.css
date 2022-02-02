@@ -1,0 +1,362 @@
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 200px;
+}
+
+
+.fix-width{
+    width: 1080px;
+    margin: auto;
+}
+
+.background{
+    background: url(https://i.ibb.co/sFDnDVq/photo-1471879832106-c7ab9e0cee23.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed
+    paddibg:40px 0;
+}
+
+.header{
+    padding: 30px 0;
+}
+.header .logo{
+    width: 38%;
+    display: inline-block;
+}
+.header .logo a{}
+
+.header .logo a img{}
+
+.header .menu{
+    width: 60%;
+    display: inline-block;
+}
+
+.header .menu ul{
+    text-align: right;
+}
+
+.header .menu ul li{
+    display: inline-block;
+}
+
+.header .menu ul li a{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+    color: white;
+    transition: .4s;
+}
+
+.header .menu ul li a:hover{
+    color: red;
+}
+
+
+/* BANNER */
+
+.banner{
+    text-align:center;
+    padding: 150px 0;
+}
+
+.banner h1{
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+    font-weight: 400;
+    font-family: 'Timmana', sans-serif;
+    position: relative;
+}
+
+.banner h1::after {
+	content: "\f10e";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	right: 100px;
+	top: -15px;
+	color: tomato;
+}
+
+.banner h1::before {
+	content: "\f10d";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	top: -15px;
+	left: 100px;
+	color: tomato;
+}
+
+/* about Section */
+
+.about{
+    background: white;
+    padding: 70px 0;
+}
+
+.about-left{
+    width: 25%;
+    display: inline-block;
+}
+
+.about-left img{
+    border: 2px solid tomato;
+    box-shadow: 2px 2px 17px black;
+}
+
+.about-right{
+    width: 65%;
+    display: inline-block;
+}
+
+.about-right h3{
+    padding-left:100px;
+    font-size: 25px;
+}
+
+.about-right p{
+    line-height: 20px;
+}
+
+/* service-box */
+
+.service{
+    background:#2e3e4e;
+    padding: 50px 0 ;
+}
+
+.service-content{}
+
+.service-content h1{
+    color: tomato;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Timmana', sans-serif;
+    
+}
+
+.service-box{}
+
+.service-box .box1{
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+}
+.service-box .box1 span {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	font-size: 30px;
+	background: tomato;
+	border-radius: 5px 20px;
+	color: white;
+	line-height: 60px;
+}
+
+
+.service-box .box1 h3{
+    color:white;
+    font-size:20px ;
+    font-family: 'Timmana', sans-serif;
+    text-transform: uppercase; 
+    font-weight: 400;
+    font-style: italic;
+}
+
+.service-box .box1 ul{
+    padding-left: 0;
+}
+
+.service-box .box1 ul li {
+    color: white;
+	font-size: 20px;
+}
+
+.service-box .box1 a{
+    color:black;
+    background: tomato;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.service-box .box1 ul li::before {
+	content: '\f560';
+	font-family: "font Awesome 5 free";
+	font-weight: 600;
+	color: tomato;
+	margin-right: 5px;
+}
+
+
+/* CONTACT */
+
+.contact{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h3{
+    font-family: 'Timmana', sans-serif;
+    text-transform: uppercase; 
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+
+
+.contact form input{
+    width: 50%;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.contact form button {
+	display: block;
+	text-align: center;
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	background: tomato;
+	color: white;
+	border: none;
+	font-size: 15px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 17px black;
+	position: relative;
+	z-index: 1;
+}
+
+/* contact-hover */
+
+.contact form button::before {
+	content: '';
+	width: 0;
+	height: 100%;
+	background: brown;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px 0 0 5px;
+	z-index: -1;
+    transition: .5s;
+}
+
+.contact form button::after {
+	content: '';
+	width: 0;
+	height: 100%;
+	background: brown;
+	position: absolute;
+	right: 0;
+    top: 0;
+	border-radius: 0 5px 5px 0 ;
+	z-index: -1;
+    transition: .5s;
+}
+
+.contact form button:hover::before {
+	width: 50%;
+}
+
+.contact form button:hover::after{
+    width: 50%;
+}
+
+/* footer */
+
+.footer{
+    background: #2e3e4e;
+}
+
+.footer h4{
+    text-align: center;
+    
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h4 span{
+    color: tomato;
+}
+
+
+/* Service-Box */
+
+
+.box-1 a{
+    position: relative;
+    z-index: 1;   
+}
+
+.box-1 a::before{
+    content: "";
+    width:0;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.box-1 a:hover::before{
+    width: 100%;
+}
+
+.box-2 a{
+    position: relative;
+    z-index: 1;
+    
+}
+.box-2 a::before{
+    content: "";
+    width:100%;
+    height: 0;
+    background: yellow;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: .5s;
+}
+.box-2 a:hover:before{
+    height: 100%;
+}
+
+.box-3 a{
+    position: relative;
+    z-index: 1;
+}
+
+.box-3 a::after{
+    content: "";
+    width:0;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.box-3 a:hover::after{
+    width: 100%;
+}
